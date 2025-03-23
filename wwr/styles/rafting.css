@@ -1,0 +1,26 @@
+:root {
+    --heading-background-color: light-green 90E39A;
+    --heading-text-color: black;
+    --heading-font: "Roboto", regular400;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    padding: var(--padding);
+}
+.hero img {
+    display:block;
+    width: 100%;
+    height:auto;
+}
+aside {
+    margin: 10px auto;
+    padding: var(--padding);
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
