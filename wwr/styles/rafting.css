@@ -1,3 +1,7 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
 :root {
     --heading-background-color: light-green;
     --heading-text-color: black;
@@ -9,6 +13,7 @@ a {
     text-decoration: none;
 }
 h1 {
+    font-weight: 100;
     background-color: sandybrown;
     color: var(--heading-text-color);
     font-family: var(--heading-font);
