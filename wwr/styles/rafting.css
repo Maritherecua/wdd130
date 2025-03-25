@@ -1,3 +1,12 @@
+* {
+margin: 0;
+padding: 0;
+}
+.header {
+    width: 100px;
+    padding: 20px;
+    border: 5px solid green;
+}
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
