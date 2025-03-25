@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 h1 {
-    background-color: desert sandybrown, var(--heading-background-color);
+    background-color: sandybrown;
     color: var(--heading-text-color);
     font-family: var(--heading-font);
     padding: var(--padding);
