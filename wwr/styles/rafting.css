@@ -7,10 +7,11 @@ header {
     padding: 20px;
     border: 5px solid green;
     margin: 1rem auto;
+}
+nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    border-bottom: 1px;
 }
     .logo img {
         margin: 0 0.25rem 0 1rem;
