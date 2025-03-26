@@ -12,6 +12,7 @@ h1 {
 }
 .article{
     position: absolutely;
+    background-color: aqua;
 }
 body{
     font-family: "Roboto", sans-serif;
