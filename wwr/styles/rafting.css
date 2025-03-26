@@ -7,6 +7,12 @@ padding: 0;
     padding: 20px;
     border: 5px solid green;
 }
+h1 {
+    position: absolute;
+}
+.article{
+    position: absolutely;
+}
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -24,7 +30,7 @@ a {
 h1 {
     font-weight: 100;
     background-color: sandybrown;
-    color: var(--heading-text-color);
+    color: black;
     font-family: var(--heading-font);
     padding: var(--padding);
 }
