@@ -8,7 +8,7 @@ header {
     border: 5px solid green;
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     border-bottom: 1px;
 }
