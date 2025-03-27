@@ -4,10 +4,6 @@ header {
     border: 3px solid green;
     margin: 10px 
 }
-
-nav{
-    display: grid;
-}
     .logo img {
         margin: 0 0.25rem 0 1rem;
         width: 30px;
