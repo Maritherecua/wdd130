@@ -100,9 +100,6 @@ body{
     margin: 0 auto;
     max-width: 200px;
 }
-.flex container{
-    display: flexbox;
-}
 div{
     position:relative;
 }
