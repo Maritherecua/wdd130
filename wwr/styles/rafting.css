@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1000px;
+}
 header {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
@@ -69,7 +73,7 @@ body{
 .hero article{
     position:absolute;
     bottom: 30%;
-    width: 95%;
+    width: 92%;
     background-color: rgb(0 0 0 / 0.5);
     color: white;
     padding: 15px;
@@ -82,24 +86,83 @@ body{
     height: auto;
     border-radius: 20px;
 }
-.history-container{
-    display: banner;
-}
-.adventures{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-}
-.adventures figure{
-    flex: 1;
-    margin: 10px;
-}
-.adventures img{
-    width: 100%;
-    height: auto;
-}
 div{
     position:relative;
+}
+.history{
+    width: 100%;
+    display:inline-block;
+    align-items: center;
+    max-width: 1000px;
+    margin: 1rem 0;
+    background: lightcoral
+    var(--border)lightgreen;
+
+}
+.history h2{
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    top: 15%;
+}
+.hist{
+    margin: 0 1rem 2rem 1rem;
+    display:flex;
+    flex-wrap: nowrap;
+}
+.hist img {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 0 0 0 2rem;
+}
+.hist p{
+    display:flex;
+    margin: 0 1rem 0 2rem;
+}
+.adventure{
+    display: grid;
+    justify-content: center;
+
+    align-items: center;
+    margin: 4rem 0;
+    border: solid green
+}
+.pictures{
+    display: grid;
+    grid-template-columns: auto;
+    flex-wrap: nowrap;
+    margin: 1rem;
+    width: 150px;
+}
+.pictures img{
+    width: 320px;
+    margin: 1rem;
+    display:flex;
+    flex-wrap: nowrap;
+}
+.pictures figcaption{
+    margin: 1.5rem
+}
+.come join the fun{
+    width:300px;
+    margin: 1rem;
+}
+footer{
+    border-top: 1px solid #000;
+    text-align: center;
+    text-decoration: none;
+}
+.sociallinks a{
+    padding: 1rem;
+    text-align: center;
+}
+
+div{
+    position:relative;
+    margin: 1rem;
+    border: 1px;
+    padding: 1rem;
 }
 aside {
     margin: 10px auto;
