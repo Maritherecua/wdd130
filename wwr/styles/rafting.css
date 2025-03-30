@@ -1,15 +1,24 @@
+<style>
 :root {
     --heading-background-color: light-green;
     --heading-text-color: black;
     --heading-font: "Roboto", regular400;
     --padding: 1rem;
-    --border: 1px solid rgb(0 0 0 / 0.1);
+    --border: 1px solid rgba(0 0 0 0.1);          /* rgb(0 0 0 / 0.1)*/
 }
 * {
     margin: 0;
     padding: 0;
-    max-width: 1000px;
+    box-sizing: border-box;            /*max-width: 1000px;*/
+    /*body-wide styling*/
 }
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+        /*Header and footer have their own maximum width*/
 header, footer {
     margin: 1rem auto;
     max-width: 1000px;
@@ -21,26 +30,24 @@ header{
     border-bottom: 1px solid green;
 }
     .logo img {
-        margin: 0 1rem 0 1rem;
+        margin: 0 1rem;
         width: 30px;
         height: auto;        
-}
+}                   /*Navigation styling*/
 nav{
-    text-align: center;
     display:flex;
     padding: 1rem;
     justify-content: center;
+    text-align: center;
 }
 nav a{
     text-decoration: none;
     color: black;
     padding: 20px;
     font-size: 1.5rem;
-    justify-content: center;
+     /*justify-content: center;      /* remove?*/
 }
-a {
-    text-decoration: none;
-}
+/*headings*/
 h1 {
     font-weight: 100;
     background-color: sandybrown;
@@ -48,16 +55,11 @@ h1 {
     font-family: var(--heading-font);
     padding: var(--padding);
 }
-body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/*Hero section*/
 .hero{
     position:relative;
     width: 100%;
-    height: auto;
+   /* height: auto;*/
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -79,9 +81,9 @@ body{
 .hero article{
     position:absolute;
     bottom: 30%;
-    width: 92%;
-    background-color: rgb(0 0 0 / 0.5);
-    color: white;
+    width: 94%;
+    background-color: rgba(0 0 0 0.6);
+    color: black;
     padding: 15px;
     z-index:10;
 }
@@ -92,25 +94,26 @@ body{
     height: auto;
     border-radius: 20px;
 }
-div{
-    position:relative;
-}
+ /*div{
+    position:relative;*/
+        /*History section*/
 .history{
-    width: 100%;
-    display:inline-block;
-    align-items: center;
+    display: block;
     max-width: 1000px;
-    margin: 1rem 0;
-    background: lightcoral
-    var(--border)lightgreen;
+    margin: 0 auto;
+    background-color: whitesmoke;  /*fixed syntax*/
+    border-bottom: solid green;
 
 }
+
 .history h2{
-    margin: 1rem;
+    margin: 0;
     padding: 1rem;
     position: relative;
+    text-align: center;
     top: 15%;
-}
+} 
+/*The history container*/
 .hist{
     margin: 0 1rem 2rem 1rem;
     display:flex;
@@ -123,32 +126,59 @@ div{
     margin: 0 0 0 2rem;
 }
 .hist p{
-    display:flex;
+    display: flex;
+    text-align: center;
     margin: 0 1rem 0 2rem;
 }
-.adventure{
+/*Adventure section wrapper*/
+/*.adventure{
     display: grid;
     justify-content: center;
 
     align-items: center;
     margin: 4rem 0;
     border: solid green
+}*/
+.adventure{
+    display: block;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid green;
+
 }
-.pictures{
+.adventure h2{
+    text-align: center;
+}
+/*.pictures{
     display: grid;
     grid-template-columns: auto;
     flex-wrap: nowrap;
     margin: 1rem;
     width: 150px;
+}*/
+.pictures{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 1rem auto;
+    text-align: center;
 }
-.pictures img{
+/*.pictures img{
     width: 320px;
     margin: 1rem;
     display:flex;
     flex-wrap: nowrap;
+}*/
+.pictures img{
+    width: auto;
+    height: 100px;
+    display: block;
 }
 .pictures figcaption{
-    margin: 1.5rem
+    margin: 0.5rem
 }
 .come join the fun{
     width:300px;
@@ -157,14 +187,18 @@ div{
 footer{
     border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem;
     text-decoration: none;
 }
 .sociallinks a{
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
 }
-
-div{
+footer a{
+    margin: 0 0.5rem;
+}
+</style>
+/*div{
     position:relative;
     margin: 1rem;
     border: 1px;
@@ -174,4 +208,4 @@ aside {
     margin: 10px auto;
     padding: var(--padding);
     box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
-}
+}*/
