@@ -79,8 +79,8 @@ h1 {
     position:absolute;
     bottom: 30%;
     width: 94%;
-    background-color: rgb(0 0 0/0.1 );
-    color: black;
+    background-color: rgb(0 0 0/0.2 );
+    color: whitesmoke;
     padding: 15px;
     z-index:10;
 }
