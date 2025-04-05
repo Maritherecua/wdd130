@@ -240,7 +240,7 @@ button{
     font-size: 1.5rem;
 }
 button:hover{
-    background-color: solid green;
+    background-color: green;
 }
 .come join the fun{
     width:300px;
