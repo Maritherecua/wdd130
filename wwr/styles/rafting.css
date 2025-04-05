@@ -46,6 +46,11 @@ nav a{
      /*justify-content: center;      /* remove?*/
 }
 /*headings*/
+main{
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: Roboto, sans-serif;  
+}
 h1 {
     font-weight: 100;
     background-color: sandybrown;
@@ -54,17 +59,28 @@ h1 {
     /*padding: var(--padding);*/
 }
 /*Hero section*/
-.hero{
+.hero, .contact{
     position:relative;
     width: 100%;
     height: auto;
     max-width: 1000px;
     margin: 0 auto;
 }
-.hero img {
+.hero img, .contact img{
     display:block;
     width: 100%;
     height:auto;
+}
+.info{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    padding: 4rem;
+    text-align: center;
+}
+.map{
+    display:grid;
+    place-items: center;
+    margin: 1rem 0;
 }
 .hero h1{
     position: absolute;
@@ -113,12 +129,12 @@ div{
     margin-top: 2%;
 } 
 /*The history container*/
-.hist{
+.hist, .info{
     margin: 0 1rem 1rem 1rem;
     display:flex;
     flex-wrap: nowrap;
 }
-.history img {
+.history img, map{
     display: block;
     width: 300px;           /*30%;*/
     height: auto;
@@ -138,7 +154,7 @@ div{
     margin: 4rem 0;
     border: solid green
 }*/
-.adventure{
+.adventure, .employees{
     display: block;
     max-width: 1000px;
     margin: 2rem auto;
@@ -172,6 +188,59 @@ div{
 }
 .pictures figcaption{
     margin: 0.5rem
+}
+.employees img{
+    width: 300px;
+    margin: 1rem;
+}
+form{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0/0.1);
+    border-radius: 0.5rem;
+    background-color: beige;
+    display: grid;
+}
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0/0.2);
+    padding: 1rem;
+}
+legend{
+    padding: 0.5rem;
+    color: #000;
+    font-size: 1.3em;
+}
+label, input, button, select, textarea{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label{
+    text-align: right;
+    padding-right: 1rem;
+}
+input, select, textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button{
+    margin: 1rem;
+    background-color:green;
+    color: black;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.5rem;
+}
+button:hover{
+    background-color: solid green;
 }
 .come join the fun{
     width:300px;
