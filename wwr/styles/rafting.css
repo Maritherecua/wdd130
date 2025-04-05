@@ -36,6 +36,7 @@ nav{
     display:flex;
     padding: 1rem;
     text-align: center;
+    justify-content: center;
 }
 nav a{
     text-decoration: none;
@@ -46,7 +47,7 @@ nav a{
 }
 /*headings*/
 h1 {
-    font-weight: 200;
+    font-weight: 100;
     background-color: sandybrown;
     color: black;
     /*font-family: var(--heading-font);*/
@@ -56,7 +57,7 @@ h1 {
 .hero{
     position:relative;
     width: 100%;
-   /* height: auto;*/
+    height: auto;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -71,7 +72,8 @@ h1 {
     left: 30%;
     color: black;
     padding: 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    z-index: 10;
 }
 .hero article{
     position:absolute;
@@ -88,38 +90,41 @@ h1 {
     height: auto;
     border-radius: 35px;
 }
- /*div{
-    position:relative;*/
+div{
+    position:relative;
+}
         /*History section*/
 .history{
     display: block;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 1rem auto;
+    place-items:center;
+    padding: 1rem;
     background-color: whitesmoke;  /*fixed syntax*/
-    border-bottom: solid green;
+    border: solid green;
 
 }
 
 .history h2{
-    margin: 0;
+    margin: 1rem 0;
     padding: 1rem;
-    position: relative;
-    text-align: center;
-    top: 15%;
+    /*position: relative;*/
+    /*text-align: center;*/
+    margin-top: 2%;
 } 
 /*The history container*/
 .hist{
-    margin: 0 1rem 2rem 1rem;
+    margin: 0 1rem 1rem 1rem;
     display:flex;
     flex-wrap: nowrap;
 }
-.hist img {
+.history img {
     display: block;
-    width: 30%;
+    width: 300px;           /*30%;*/
     height: auto;
     margin: 0 0 0 2rem;
 }
-.hist p{
+.history p{
     display: flex;
     text-align: center;
     margin: 0 1rem 0 2rem;
