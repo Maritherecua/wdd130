@@ -36,14 +36,14 @@ nav{
     display:flex;
     padding: 1rem;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-end;        /*center;*/
 }
 nav a{
     text-decoration: none;
     color: black;
     padding: 20px;
     font-size: 1.2rem;
-     /*justify-content: center;      /* remove?*/
+    justify-content: center;      /* remove?*/
 }
 /*headings*/
 main{
@@ -145,7 +145,6 @@ div{
     text-align: center;
     margin: 0 1rem 0 2rem;
 }
-/*Adventure section wrapper*/
 /*.adventure{
     display: grid;
     justify-content: center;
@@ -154,6 +153,21 @@ div{
     margin: 4rem 0;
     border: solid green
 }*/
+.box{
+    max-width: 800px;
+    margin: 4rem auto;
+    background-color: #e1951b;
+    position: absolute;
+}
+.box img, .trip1 img, .trip1-choice img{
+width: 200px;
+height: auto;
+float: right;
+margin: 1rem 1rem 1rem 1rem;
+}
+.box p, .trip1 p{
+    margin: 1rem 1rem 1rem 1rem;
+}
 .adventure, .employees{
     display: block;
     max-width: 1000px;
