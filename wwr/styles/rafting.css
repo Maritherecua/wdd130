@@ -92,16 +92,15 @@ h1 {
     z-index: 10;
 }
 .hero article{
-    position: relative;
+    position: absolute;
     bottom: 35%;
-    width: 92%;
-    color: black;
+    width: 90%;
+    color: white;
     padding: 15px;
     font-size: 1.2rem;
 }
 .hero article img{
     float: right;
-    margin-left: 15px;
     width: 250px;
     height: auto;
     border-radius: 35px;
@@ -159,7 +158,6 @@ div{
 .box{
     max-width: 800px;
     margin: 4rem auto;
-    background-color: #e1951b;
     position: absolute;
 }
 .box img, .trip1 img, .trip1-choice img{
@@ -298,7 +296,7 @@ table, th, td{
     margin: 2rem;
 }
 .book{
-    background-color: #3f6e98 ;
+    background-color:lightsalmon ;
     text-align: center;
 }
 .newsletter h2{
