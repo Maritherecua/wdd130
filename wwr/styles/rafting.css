@@ -108,6 +108,9 @@ h1 {
 }
 div{
     position: relative;
+    margin: 1rem;
+    border: 1px;
+    padding: 1rem;
 }
         /*History section*/
 .history{
