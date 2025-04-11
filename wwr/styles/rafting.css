@@ -92,7 +92,7 @@ h1 {
     z-index: 10;
 }
 .hero article{
-    position:absolute;
+    position: relative;
     bottom: 35%;
     width: 92%;
     color: black;
@@ -107,7 +107,7 @@ h1 {
     border-radius: 35px;
 }
 div{
-    position:relative;
+    position: relative;
 }
         /*History section*/
 .history{
@@ -314,7 +314,7 @@ footer{
     text-align: center;
 }
 footer a{
-    margin: 0 0.rem;
+    margin: 0;
 }
 
 /*div{
