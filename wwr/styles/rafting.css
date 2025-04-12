@@ -1,6 +1,4 @@
 :root {
-    --heading-background-color: light-green;
-    --heading-text-color: black;
     --heading-font: "Roboto", regular400;
     --padding: 1rem;
     --border: 1px solid rgb(0 0 0);          /* rgb(0 0 0 / 0.1)*/
@@ -13,7 +11,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
         /*Header and footer have their own maximum width*/
@@ -27,8 +25,8 @@ header{
     align-items: center;
     border: 1px solid green;
 }
-    .logo img {
-        margin: 0 1rem;
+    .logo-box{
+        margin: 0 1rem 0 3rem;
         width: 30px;
         height: auto;           
 }                   /*Navigation*/
@@ -38,11 +36,10 @@ nav{
     text-align: center;
     justify-content: flex-end;        /*center;*/
 }
-nav a{
+.tabs a{
     text-decoration: none;
     color: black;
-    padding: 20px;
-    font-size: 1.2rem;
+    padding: 2rem;
     justify-content: center;      /* remove?*/
 }
 /*headings*/
@@ -51,25 +48,18 @@ main{
   margin: 2rem auto;
   font-family: Roboto, sans-serif;  
 }
-h1 {
-    font-weight: 100;
-    background-color: sandybrown;
-    color: black;
-    /*font-family: var(--heading-font);*/
-    /*padding: var(--padding);*/
-}
 /*Hero section*/
 .hero, .contact{
     position:relative;
-    width: 100%;
-    height: auto;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 .hero img, .contact img{
-    display:block;
-    width: 100%;
-    height:auto;
+    width: 1000px;
+    height: 100%;
+    object-fit: cover;
 }
 .info{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -82,14 +72,17 @@ h1 {
     place-items: center;
     margin: 1rem 0;
 }
-.hero h1{
+h1{
     position: absolute;
-    top: 5%;
-    left: 30%;
-    color: black;
-    padding: 15px;
-    font-size: 1.5rem;
-    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-family: Roboto, sans-serif;
+}
+.hero h2{
+    color: white;
+    padding: 5rem;
+    position: absolute;
 }
 .hero article{
     position: absolute;
@@ -104,6 +97,12 @@ h1 {
     width: 250px;
     height: auto;
     border-radius: 35px;
+}
+.box{
+    max-width: 800px;
+    margin: 4rem auto;
+    background-color: #b58b47;
+    position: absolute;
 }
 div{
     position: relative;
@@ -123,12 +122,9 @@ div{
 
 }
 
-.history h2{
+.history h2, .trips h2{
     margin: 1rem 0;
     padding: 1rem;
-    /*position: relative;*/
-    /*text-align: center;*/
-    margin-top: 2%;
 } 
 /*The history container*/
 .hist, .info{
@@ -147,20 +143,7 @@ div{
     text-align: center;
     margin: 0 1rem 0 2rem;
 }
-/*.adventure{
-    display: grid;
-    justify-content: center;
-
-    align-items: center;
-    margin: 4rem 0;
-    border: solid green
-}*/
-.box{
-    max-width: 800px;
-    margin: 4rem auto;
-    position: absolute;
-}
-.box img, .trip1 img, .trip1-choice img{
+.box img, .trip1 img{
 width: 200px;
 height: auto;
 float: right;
@@ -168,53 +151,35 @@ margin: 1rem 1rem 1rem 1rem;
 }
 .trip1-choice img{
     width: 400px;
+    height: auto;
+    float:right;
+    margin: 1rem 1rem 1rem 1rem;
 }
 .box p, .trip1 p{
     margin: 1rem 1rem 1rem 1rem;
 }
 .adventure, .employees .adventureh{
-    display: block;
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 1px solid green;
-
-}
-.adventuresh{
-    display: flex;
+    display: grid;
     place-items: center;
     margin: 4rem 0;
-    border: green;
+    border: 1px solid green;
 }
 .adventure h2{
     text-align: center;
 }
-/*.pictures{
-    display: grid;
-    grid-template-columns: auto;
-    flex-wrap: nowrap;
-    margin: 1rem;
-    width: 150px;
-}*/
-.pictures{
+.pictures, .picturesh{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 1000px;
-    margin: 1rem auto;
-    text-align: center;
+    flex-wrap: nowrap;
 }
 .pictures img{
     width: auto;
     height: 100px;
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .picturesh img{
-    width: 200px;
+    width: 300px;
     margin: 1rem;
-    display: grid;
-    flex-wrap: nowrap;
 }
 .pictures figcaption{
     margin: 0.5rem
@@ -278,10 +243,6 @@ table, th, td{
     margin:1rem auto;
     background-color: #e1951b;
 }
-.come join the fun{
-    width:300px;
-    margin: 1rem;
-}
 .trip1{
     position:relative;
     width: 30rem;
@@ -293,7 +254,7 @@ table, th, td{
     text-align: center;
 }
 .trips{
-    margin: 2rem;
+    margin: 0;
 }
 .book{
     background-color:lightgrey ;
