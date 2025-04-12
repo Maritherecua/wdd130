@@ -51,14 +51,14 @@ main{
 /*Hero section*/
 .hero, .contact{
     position:relative;
-    max-width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 .hero img, .contact img{
     width: 1000px;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 .info{
@@ -164,8 +164,15 @@ margin: 1rem 1rem 1rem 1rem;
     margin: 4rem 0;
     border: 1px solid green;
 }
-.adventure h2{
+.adventure h2, .adventureh h2{
     text-align: center;
+}
+.pictures{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+
 }
 .pictures, .picturesh{
     display: flex;
@@ -178,7 +185,8 @@ margin: 1rem 1rem 1rem 1rem;
     flex-wrap: nowrap;
 }
 .picturesh img{
-    width: 300px;
+    width: 430px;
+    height: 300px;
     margin: 1rem;
 }
 .pictures figcaption{
@@ -190,12 +198,15 @@ margin: 1rem 1rem 1rem 1rem;
 }
 form{
     width: 1000px;
-    margin: 0 auto;
+    margin: 0 0;
     padding: 1rem;
     border: 1px solid rgb(0 0 0/0.1);
     border-radius: 0.5rem;
     background-color: beige;
     display: grid;
+}
+.newsletter form{
+    max-width: 940px;
 }
 fieldset{
     display: grid;
@@ -262,8 +273,9 @@ table, th, td{
 }
 .newsletter h2{
     text-align: center;
-    padding: 2rem;
-    background-color: lightgrey;
+    padding: 1rem;
+    width: 940px;
+    background: lightgray;
 }
 footer{
     border: 1px solid #000;
