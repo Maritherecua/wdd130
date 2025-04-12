@@ -23,7 +23,7 @@ header{
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    border: 1px solid green;
+    border-bottom: 1px solid green;
 }
     .logo-box{
         margin: 0 1rem 0 3rem;
