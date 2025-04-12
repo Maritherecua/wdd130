@@ -267,6 +267,9 @@ table, th, td{
 .trips{
     margin: 0;
 }
+.trips h2{
+    text-align: center;
+}
 .book{
     background-color:lightgrey ;
     text-align: center;
