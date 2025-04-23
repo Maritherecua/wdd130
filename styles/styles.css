@@ -20,6 +20,7 @@ h1 {
 .grid{
     display: grid;
     align-items: center;
+    max-width: 840px;
 }
 main img {
     width: 150px;
@@ -28,7 +29,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-header, footer, .grid{
+header, footer{
     max-width: 840px;
     margin: 0 auto;
 }
@@ -36,7 +37,6 @@ p {
     padding: 0;
 }
 main {
-    max-width: 840px;
     grid-column: 2/3;
     align-items: center;
     
