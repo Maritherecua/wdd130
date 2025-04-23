@@ -15,6 +15,7 @@ nav a {
 } 
 h1 {
     color: darkblue;
+    border-bottom: 1px;
 }
 .grid{
     display: grid;
