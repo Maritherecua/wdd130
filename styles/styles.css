@@ -27,7 +27,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-header, .grd, footer{
+header, footer, .grid{
     max-width: 840px;
     margin: 0 auto;
 }
