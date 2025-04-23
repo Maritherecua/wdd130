@@ -16,6 +16,10 @@ nav a {
 h1 {
     color: darkblue;
 }
+.grid{
+    display: grid;
+    align-items: center;
+}
 main img {
     width: 150px;
     height: auto;
@@ -23,7 +27,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-header,footer{
+header, .grd, footer{
     max-width: 840px;
     margin: 0 auto;
 }
@@ -32,6 +36,9 @@ p {
 }
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    align-items: center;
+    
 }
 aside {
     width: 20rem;
@@ -41,6 +48,9 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside img {
     width: 200px;
